@@ -3,7 +3,7 @@ import ItemList from "./item-list";
 export default function Page() {
   return (
     <main>
-      <h1 className="font-bold mb-6 text-4xl">Shopping List</h1>
+      <h1 className="text-3xl font-bold m-2 mb-6">Shopping List</h1>
       <ItemList />
     </main>
   );
