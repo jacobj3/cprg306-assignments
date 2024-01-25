@@ -3,7 +3,9 @@ import Link from "next/link";
 export default function Heading() {
   return (
     <main>
-      <h1 className="text-4x1">CPRG 306: Web Development 2 - Assignments</h1>
+      <h1 className="text-3xl font-bold mb-4">
+        CPRG 306: Web Development 2 - Assignments
+      </h1>
 
       <ul>
         <li>
