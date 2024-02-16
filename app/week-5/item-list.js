@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Item from "./item";
 import items from "./items.json";
@@ -68,15 +69,17 @@ export default function ItemList() {
       <div>
         {sortBy === "groupedCategory" ? (
           categoryOrder.map((category) => (
-            <div key={category}>
-              <h3 className="capitalize text-xl">{category}</h3>
+            <ul key={category} style={{ listStyleType: "none" }}>
+              <li>
+                <h3 className="capitalize text-xl">{category}</h3>
+              </li>
               {sortedItems
                 .filter(
                   (item) =>
                     item.category.toLowerCase() === category.toLowerCase()
                 )
                 .map((item) => (
-                  <div key={item.id}>
+                  <li key={item.id}>
                     <Item
                       key={item.id}
                       name={item.name}
@@ -84,9 +87,9 @@ export default function ItemList() {
                       category={item.category}
                       groupedCategory={item.category}
                     />
-                  </div>
+                  </li>
                 ))}
-            </div>
+            </ul>
           ))
         ) : (
           <ul>
