@@ -62,9 +62,7 @@ export default function ItemList() {
         <label
           className="absolute top-20 left-240 text-gray-600 text-xs italic"
           htmlFor="group-category"
-        >
-          ← "Grouped Category" is an optional extra challenge
-        </label>
+        ></label>
       </div>
 
       <div>
