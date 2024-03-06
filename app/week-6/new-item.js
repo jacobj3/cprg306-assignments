@@ -27,6 +27,7 @@ export default function NewItem({ onAddItem }) {
       >
         <div className="mb-2">
           <input
+            name="Item name"
             type="text"
             placeholder="Item name"
             required
@@ -37,6 +38,7 @@ export default function NewItem({ onAddItem }) {
         </div>
         <div className="flex justify-between">
           <input
+            name="Quantity"
             type="number"
             min="1"
             max="99"
@@ -46,6 +48,7 @@ export default function NewItem({ onAddItem }) {
             onChange={(event) => setQuantity(event.target.value)}
           />
           <select
+            name="Category"
             className="ml-1 border-2 border-gray-300 p-2 rounded-lg font-sans"
             value={category}
             onChange={(event) => setCategory(event.target.value)}

@@ -38,7 +38,7 @@ export default function ItemList({ items }) {
   return (
     <main>
       <div>
-        <label className="sort">Sort by: </label>
+        <span className="sort">Sort by: </span>
         <button
           className="bg-orange-700 p-1 m-2 w-28"
           onClick={() => handleSortBy("name")}
@@ -53,19 +53,6 @@ export default function ItemList({ items }) {
         >
           Category
         </button>
-        <button
-          className="bg-orange-700 p-1 m-2 w-28"
-          onClick={() => handleSortBy("groupedCategory")}
-          style={{
-            backgroundColor: sortBy === "groupedCategory" ? "#ff751a" : "",
-          }}
-        >
-          Grouped Category
-        </button>
-        <label
-          className="absolute top-20 left-240 text-gray-600 text-xs italic"
-          htmlFor="group-category"
-        ></label>
       </div>
 
       <div>
