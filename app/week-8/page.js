@@ -17,7 +17,6 @@ export default function LandingPage() {
     await firebaseSignOut();
   };
 
-  // Display some of the user's information
   return (
     <div>
       {user ? (
